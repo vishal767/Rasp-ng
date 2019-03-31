@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "serve -s dist",
+    "dev": "ng serve",
     "build": "ng build",
+    "heroku-postbuild": "npm run build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -22,6 +24,7 @@
     "core-js": "^2.5.4",
     "ng-zorro-antd": "^7.1.0",
     "rxjs": "~6.3.3",
+    "serve": "^10.1.2",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
   },
