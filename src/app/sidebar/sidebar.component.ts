@@ -5,22 +5,13 @@ import { Component } from '@angular/core';
   template: `
     <nz-layout>
       <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzWidth]="width" [nzReverseArrow]="isReverseArrow">
-        <div class="logo"></div>
+        <a routerLink = "" href = ""><div class="logo"></div></a>
         <ul nz-menu [nzTheme]="'dark'" [nzMode]="'inline'" [nzInlineCollapsed]="isCollapsed">
-          <li nz-submenu>
-            <span title><i nz-icon type="project"></i><span class="nav-text">Dashboard</span></span>
-            <ul>
-              <li nz-menu-item>Quick settings 1</li>
-              <li nz-menu-item>Quick settings 2</li>
-              <li nz-menu-item>Quick settings 3</li>
-            </ul>
+          <li nz-menu-item>
+            <a routerLink = "/dashboard" href = ""><span><i nz-icon type="project"></i><span class="nav-text">Dashboard</span></span></a>
           </li>
-          <li nz-submenu>
-            <span title><i nz-icon type="read"></i><span class="nav-text">Previous History</span></span>
-            <ul>
-              <li nz-menu-item>Team 1</li>
-              <li nz-menu-item>Team 2</li>
-            </ul>
+          <li nz-menu-item>
+            <span><i nz-icon type="read"></i><span class="nav-text">Previous History</span></span>
           </li>
           <li nz-menu-item>
             <span><i nz-icon type="branches"></i><span class="nav-text">Routines</span></span>
@@ -53,7 +44,7 @@ import { Component } from '@angular/core';
   ]
 })
 export  class NzDemoLayoutSideComponent {
-  isCollapsed = false;
-  isReverseArrow = false;
+  isCollapsed = true;
+  isReverseArrow = true;
   width = 200;
 }
