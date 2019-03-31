@@ -11,13 +11,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import {NzDemoLayoutSideComponent} from './sidebar/sidebar.component';
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    NzDemoLayoutSideComponent
   ],
   imports: [
     BrowserModule,

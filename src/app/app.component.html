@@ -1,30 +1,3 @@
-<div class="wrapper">
-    <div class="navigationBar" [style.width.px]="navbarDivWidth" >
-        <button nz-button [nzType]="'primary'" (click)="toggleCollapsed()" style="margin-bottom: 10px;">
-        <i nz-icon [type]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
-        </button>
-        <ul nz-menu [nzMode]="'inline'" [nzInlineCollapsed]="isCollapsed">
-        <li nz-menu-item nz-tooltip nzPlacement="right" [nzTitle]="isCollapsed ? 'Dashboard' : ''">
-            <a routerLink = '/dashboard' href='#'><span title>
-            <i nz-icon type="dashboard"></i>
-            <span>Dashboard</span>
-            </span></a>
-        </li>
-        <li nz-menu-item nz-tooltip nzPlacement="right" [nzTitle]="isCollapsed ? 'Previous History' : ''">
-            <span title>
-            <i nz-icon type="database"></i>
-            <span>Previous History</span>
-            </span>
-        </li>
-        <li nz-menu-item nz-tooltip nzPlacement="right" [nzTitle]="isCollapsed ? 'Routines' : ''">
-            <span title>
-            <i nz-icon type="schedule"></i>
-            <span>Routines</span>
-            </span>
-        </li>
-        </ul>
-    </div>
-    <div class="mainContent">
-        <router-outlet></router-outlet>
-    </div>
-  </div>
+
+    <nz-demo-layout-side></nz-demo-layout-side>
+  

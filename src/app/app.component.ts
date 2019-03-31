@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hydra';
+  title = 'Rasp-Ng';
   isCollapsed = true;
   navbarDivWidth = 80;
 
