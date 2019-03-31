@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "serve -s dist",
+    "start": "serve -s dist/hydra",
     "dev": "ng serve",
     "build": "ng build",
     "heroku-postbuild": "npm run build",
