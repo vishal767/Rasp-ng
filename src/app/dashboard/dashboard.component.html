@@ -1,4 +1,37 @@
-<div class="title">
-  Dashboard
-</div>
+<div class="humidity" nz-col nzXXl="6" nzXl="8" nzLg="12" nzMd="16" nzSm="32" nzXs="32" nzOffset = "1">
+    <div>Humidity</div>
+    <div></div>
+    <canvas baseChart 
+      [data]="pieChartData" 
+      [labels]="pieChartLabels" 
+      [chartType]="pieChartType"
+      [options]="pieChartOptions"
+      [plugins]="pieChartPlugins"
+      [legend]="pieChartLegend">
+  </canvas>
+</div> 
 
+<div class="soilMoisture" nz-col nzXXl="6" nzXl="8" nzLg="12" nzMd="16" nzSm="32" nzXs="32" nzOffset = "1">
+    <div>Soil Moisture</div>
+    <canvas baseChart 
+      [data]="pieChartData" 
+      [labels]="pieChartLabels" 
+      [chartType]="pieChartType"
+      [options]="pieChartOptions"
+      [plugins]="pieChartPlugins"
+      [legend]="pieChartLegend">
+  </canvas>
+</div> 
+
+<div class="temperature" nz-col nzXXl="6" nzXl="8" nzLg="12" nzMd="16" nzSm="32" nzXs="32" nzOffset = "1">
+    <div>Temperature</div>
+    <canvas baseChart 
+      [datasets]="lineChartData"
+      [labels]="lineChartLabels"
+      [options]="lineChartOptions"
+      [colors]="lineChartColors"
+      [legend]="lineChartLegend"
+      [chartType]="lineChartType"
+      [plugins]="lineChartPlugins">
+  </canvas>
+</div> 
